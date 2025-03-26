@@ -11,7 +11,8 @@
     <body>
     <header>
         <nav>
-            <ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links">
                 <li><a href="index.html">WiFi</a></li>
                 <li><a href="index.html">Normas</a></li>
                 <li><a href="guiahogar.html">Apartamento</a></li>
@@ -44,10 +45,10 @@
         <p>El mando <i class="fa-solid fa-person-chalkboard"></i> del aire acondicionado se encuentra justo al entrar en el apartamento a la izquierda, en la pared</p>
         <div class="story-content__img3"></div>
         <ul>Explicación de los botones:</ul>
-            <li>Mode: con este botón cambiamos el modo a calor o a frio. La <i class="fa-solid fa-snowflake"></i> indica que esta programado para aire frio, y el <i class="fa-solid fa-sun"></i> que está programado para aire caliente. Normalmente estará preparado para solo tener que encender, según ka época del año.</li>
+            <li>Mode: con este botón cambiamos el modo a calor o a frio. La <i class="fa-solid fa-snowflake"></i> indica que esta programado para aire frio, y el <i class="fa-solid fa-sun"></i> que está programado para aire caliente. Normalmente estará preparado para solo tener que encender, según la época del año.</li>
             <li>FAN: con este botón se ajusta la velocidad del aire, la potencia con la que sale por las rejillas.</li>
             <li><i class="fa-solid fa-plus"></i> y <i class="fa-solid fa-minus"></i>: Sirven para subir y bajar los grados del aire.</li>
-            <p>El resto de botones es mejor no usarlos para no desconfigurar el aire acondicionado.</p>
+            <p><i class="fa-solid fa-star-of-life"></i> El resto de botones es mejor no usarlos para no desconfigurar el aire acondicionado.</p>
     </section>
     
     <section class="cocina">
@@ -55,8 +56,8 @@
         <ul>
             <li><i class="fa-solid fa-mug-saucer"></i> Disponeis de unas cápsulas de regalo para la cafetera NESPRESSO.</li>
             <li>También unas botellitas <i class="fa-solid fa-bottle-water"></i> de agua <i class="fa-solid fa-droplet"></i> de regalo (estarán sobre la mesa del salón o en la nevera).</li>
-            <li>El agua de Alicante del grifo <i class="fa-solid fa-faucet-drip"></i> es TOTALMENTE POTABLE, pero es un agua muy dura.</li>
-            <li>Disponéis, de forna gratuita: especias, sal, azúcar e infusiones. Si gastas algo del todo y quieres reponerlo o avisarnos de que se ha gastado te lo agradecemos.</li>
+            <li>El agua de Alicante del grifo <i class="fa-solid fa-faucet-drip"></i> es <strong>totalmente potable</strong></li>
+            <li>Disponéis, de forma gratuita: especias, sal, azúcar e infusiones. Si gastas algo del todo y no lo repones, avisanos para la siguiente reserva.</li>
             <li>Utensilios de cocina <i class="fa-solid fa-kitchen-set"></i> y tostadora totalmente disponibles para vuestra estancia. Así como microondas, horno, y vitrocerámica con extractor.</li>
         </ul>
     </section>
@@ -65,7 +66,7 @@
         <h1><i class="fa-solid fa-person-through-window"></i> Ventanas y puertas <i class="fa-solid fa-door-closed"></i></h1>
         <p>Para bloquear el ruido de la ciudad, las ventanas y puertas cierran herméticamente.  También dispones de mosquiteras para que no entren insectos.</p>
         <ol type="1"><i class="fa-solid fa-circle-exclamation"></i> Cuando salgas a la calle para patear la ciudad y divertirte recuerda cerrar con llave la puerta del apartamento. Para ello, como no hay una llave física te explico como hacerlo:</ol>
-        <li>Activa la cerradura inteligente de la misma manera que ko haces cuando quieres entrar al apartamento</li>
+        <li>Activa la cerradura inteligente de la misma manera que lo haces cuando quieres entrar al apartamento</li>
         <li>Gira el pomo de la cerradura inteligente en el sentido contrario al que lo haces cuando quieres entrar, es decir, hacia la izquierda.</li>
         <li>Escucharás el sonido de la puerta blindada cerrandose, de forma más segura para tu estancia</li>
         <li>Si quieres cerrar con llave cuando estás dentro del apartamento simplemente gira el pomo interior de la puerta, no tendrás que activar la cerradura inteligente.</li>
@@ -75,7 +76,7 @@
         
     <section class="calentador">
         <h1><i class="fa-solid fa-temperature-arrow-up"></i> Calentador de Agua Eléctrico <i class="fa-solid fa-temperature-arrow-down"></i></h1>
-        <ul>El calentador de agua de la ducha y fregadero, se encuentra encima de la nevera en un armario, como veréis es un calentador pequeño de 50 litros, ya que no hay posibilidad de otro más grande:</ul>
+        <ul>El calentador de agua de la ducha y fregadero, se encuentra encima de la nevera en un armario. Como veréis es un calentador pequeño de 50 litros, ya que no hay posibilidad de otro más grande:</ul>
         <li>Por el medioambiente <i class="fa-solid fa-hand-holding-droplet"></i> os recomendamos: cerrar el grifo <i class="fa-solid fa-shower"></i> mientras os estáis enjabonando, así gastaremos menos y os durará más el agua <i class="fa-solid fa-droplet"></i> caliente <i class="fa-solid fa-fire-flame-curved"></i>.</li>
         <li><i class="fa-solid fa-temperature-full"></i> Si se acaba el agua caliente, tan solo será necesaria media hora <i class="fa-solid fa-clock"></i> entre ducha y ducha, para volver a tener agua caliente.</li>
         
@@ -98,5 +99,10 @@
         <a href="https://wa.me/34622252082" class="whatsapp-float" target="_blank">
     <i class="fa-brands fa-whatsapp"></i>
 </a>
+        <script>
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+}
+</script>
     </body>
 </html>

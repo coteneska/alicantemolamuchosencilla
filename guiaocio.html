@@ -11,7 +11,8 @@
     <body>
     <header>
         <nav>
-            <ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links">
                 <li><a href="index.html">WiFi</a></li>
                 <li><a href="index.html">Normas</a></li>
                 <li><a href="guiahogar.html">Apartamento</a></li>
@@ -49,5 +50,10 @@
         <a href="https://wa.me/34622252082" class="whatsapp-float" target="_blank">
     <i class="fa-brands fa-whatsapp"></i>
 </a>
+        <script>
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+}
+</script>
     </body>
 </html>
