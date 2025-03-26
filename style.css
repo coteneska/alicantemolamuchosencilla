@@ -1,0 +1,232 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #1E334D;
+    padding-top: 70px; /* Ajusta según la altura del menú */
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+ul, ol {
+    font-size: 20px;
+}
+
+header {
+    /*background-color: #4A72A8;
+    padding: 1rem;
+    text-align: center;
+    header {*/
+    background-color: #4A72A8;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    color: #4A72A8;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    height: 40vh;
+    background: url('images/esplanada.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    background-color: rgba(58, 95, 150, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Sections */
+section {
+    padding: 1.5rem;
+    background: white;
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 32px;
+    color: #4A72A8;
+    border-bottom: 2px solid #2F4D75;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+i {
+    color: cadetblue;
+}
+
+.hero-content h1 {
+    color: white;
+}
+
+.normas li {
+    font-size: 20px;
+    color: #1E334D;
+}
+
+.checkout li {
+    font-size: 20px;
+    color: #1E334D;
+}
+
+.checkout ul {
+    font-size: 20px;
+    color: #1E334D;
+}
+
+.aireacondicionado li {
+    font-size: 20px;
+    color: #1E334D;
+}
+
+.cocina li {
+    font-size: 20px;
+    color: #1E334D;
+}
+
+.ventanas li {
+    font-size: 20px;
+    color: #1E334D;
+}
+
+.calentador li {
+    font-size: 20px;
+    color: #1E334D;
+}
+
+.lavanderia li {
+    font-size: 20px;
+    color: #1E334D;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-float:hover {
+    background-color: #1EBE5D;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    p {
+        font-size: 16px;
+    }
+    .hero {
+        height: 30vh;
+    }
+    .hero-content {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    section {
+        width: 95%;
+    }
+}
+
+.story-content__img {
+    height: 300px;
+    aspect-ratio: 1.5;
+    background-image: url(images/mercasdoelsabio.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 12px;
+}
+
+.story-content__img2 {
+    height: 300px;
+    aspect-ratio: 1.5;
+    background-image: url(images/trammercado.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 12px;
+}
+
+.story-content__img3 {
+    height: 300px;
+    aspect-ratio: 1.5;
+    background-image: url(images/aireacondicionado.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 12px;
+}
